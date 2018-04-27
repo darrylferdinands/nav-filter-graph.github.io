@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Gramover</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
+
+<style>
+.flex-container {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: 10px;
+  margin-left: 80px;
+  padding: 10px;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 30px;
+}
+</style>
+</head>
+<body style="font-family: 'Alegreya', sans-serif; font-size: 15px;">
+
+<nav class="navbar navbar-expand-lg navbar-default navbar-fixed-top scrolling-navbar" style="background-color: white;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+      <a class="navbar-brand" href="index2.html"> 
+      <img src="skymet logo.png" style="display: inline-block; height: 125%; margin-left: 90px;">
+      <span style="display: inline-block;"> </span>
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a class="navbar-brand" href="#" style="color: #00cc99; background-color: default; text-shadow: 2px;font-family: 'Alegreya', serif;font-size: 17px; margin-left: 35px;"><img src="dashboard.png" style="display: inline-block; height: 145%;">Dashboard</a></li>
+        <li><a class="navbar-brand" href="#" style="background-color: default;font-family: 'Alegreya',serif;font-size:17px; margin-left: 20px;"><img src="userguide.png" style="display: inline-block; height: 145%;">User Guide</a></li>
+        <li><a class="navbar-brand" href="#" style="background-color: default;font-family: 'Alegreya', serif;font-size: 17px;"><img src="def.png" style="display: inline-block; height: 145%;margin-left: 20px;">Definitions</a></li>
+      <li><a href="#" style="background-color: default;font-family: 'Alegreya', serif;font-size: 17px;margin-left: 20px;"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
+      
+        
+        <li><a href="#" style="background-color: default;font-family: 'Alegreya', serif;font-size: 17px;margin-left: 20px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    
+    </div>
+  </div>
+</nav>
+
+
+<div class="flex-container1">
+
+<div class="filter">
+<h5 style="font-size: 18px;">Filter: </h5> <br>
+ Crop:
+  <select id="crop" name="crop">
+     <option>Paddy</option>
+     <option>Guar</option>
+     <option>Cotton</option>
+     <option>Maize</option>
+     <option>Cowpea</option>
+     <option>Bajra</option>
+</select>
+State:
+<select id="state" name="state">
+    <option>Uttar Pradesh</option>
+      <option>Jharkhand</option>
+      <option>Haryana</option>
+      <option>Punjab</option>
+      <option>Rajasthan</option>
+      <option>Gujarat</option>
+   
+</select>
+District:
+<select id="district" name="district">
+    <option>Hardoi</option>
+      <option>Fatehpur</option>
+      <option>Bulandsheher</option>
+      <option>Faizabad</option>
+      <option>Gorakhpur</option>
+      <option>Goda</option> 
+</select>
+<label class="container2">Graphical
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+<label class="container2">Listing
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+</div>
+
+<div class="date">
+<h5 style="font-size: 18px;">Select Date: </h5> <br>
+<input type="date" name="random">
+<input type="Submit" value="Display">
+<div class="datecheck">
+<label class="container3">5th Sep 2018
+  <input type="radio" checked="checked" name="radio1">
+  <span class="checkmark1"></span>
+</label>
+<label class="container3">24th Sep 2018
+  <input type="radio" name="radio1">
+  <span class="checkmark1"></span>
+</label>
+<label class="container3">9th Oct 2018
+  <input type="radio" checked="checked" name="radio1">
+  <span class="checkmark1"></span>
+</label>
+<label class="container3">15th Oct 2018
+  <input type="radio" name="radio1">
+  <span class="checkmark1"></span>
+</label>
+<label class="container3">23rd Nov 2018
+  <input type="radio" checked="checked" name="radio1">
+  <span class="checkmark1"></span>
+</label>
+
+
+</div>
+</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<div class="flex-container">
+<div id="container1" > </div> 
+<div id="container"></div>
+  </div>
+&nbsp;&nbsp;&nbsp;&nbsp; 
+<button id="plain" style="border-radius: 50%; margin-left: 105px;">Plain</button>
+<button id="inverted" style="border-radius: 50%;">Inverted</button>
+<button id="polar" style="border-radius: 50%;" >Polar</button>
+
+<div class="flex-container">
+  <div id="container1"> </div> 
+</div>
+  
+   <script  src="js/index2.js"></script>
+  <script  src="js/index1.js"></script> 
+
+
+
+</body>
+</html>
