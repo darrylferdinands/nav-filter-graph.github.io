@@ -1,8 +1,8 @@
 var chart = Highcharts.chart('container', {
 
   chart: {
-    type: 'column'
-  },
+    type: 'column',
+      },
 
   title: {
     text: 'Cumulative Sowing Trend'

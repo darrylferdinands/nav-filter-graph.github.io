@@ -142,6 +142,22 @@ input[type=submit] {
   margin: 27px;
 }
 
+.flex-container2 {
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin-top: 10px;
+  margin-left: 80px;
+  padding: 10px;
+  position: relative;
+width: 1620px;
+height: 400px;
+}
+.flex-container2 > div {
+  background-color: #f1f1f1;
+  margin: 30px;
+}
 .date {
   display: inline-block;
   margin-left: 70px;
@@ -226,3 +242,76 @@ h5{
   margin-left: -15px;
 }
 
+.container4 {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 2px;
+    border: solid;
+    border-radius: 50%;
+    border-color:grey;
+    border-width: 2px;
+    border-spacing: 2px;
+    width: 70px;
+    height:23px;
+    margin-top: 5px;
+}
+
+.container4 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark2 {
+    position: absolute;
+    top: 2.5px;
+    left: 7px;
+    height: 13px;
+    width: 13px;
+    background-color: #eee;
+    border-radius: 50%;
+    border-color: black;
+}
+
+/* On mouse-over, add a grey background color */
+.container4:hover input ~ .checkmark2 {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container4 input:checked ~ .checkmark2 {
+    background-color: #2196F3 ;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container4 input:checked ~ .checkmark2:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container4 .checkmark2:after {
+  top: 4px;
+  left: 4px;
+  width: 4.5px;
+  height: 5px;
+  border-radius: 50%;
+  background: white;
+  
+}

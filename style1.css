@@ -1,11 +1,15 @@
+
 #container {border-radius: 15px;
     border : 1.5px ;
     border-style: solid;
     width: 780px;
     padding: 15px; 
     height: 450px; 
+    
 }
 .navbar-nav > li{
   margin-left:40px;
 }
 
+
+ 
