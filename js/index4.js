@@ -1,13 +1,15 @@
 // Create the chart
 var chart = Highcharts.chart({
-    chart: { 
+    chart: { height: 500,
         type: 'column',
         renderTo: 'container7',
-        marginRight: 130,
-        marginBottom: 25,
+        style : {
+            fontFamily : 'Alegreya',
+
+        }
     },
     title: {
-        text: 'Field Survey'
+        text: 'Field Survey',
     },
     subtitle: {
         text: 'Total Survey = 2308'
@@ -16,8 +18,7 @@ var chart = Highcharts.chart({
         type: 'category',
         title: {
             text: 'District'
-        }
-        
+        }  
     },
     yAxis: {
         title: {
@@ -32,7 +33,7 @@ var chart = Highcharts.chart({
         series: {
             borderWidth: 0,
             borderRadius: 5,
-            color: "darkblue",
+            color: "#4d88ff",
             dataLabels: {
                 enabled: true,
                 format: '{point.y:1f}'
@@ -354,3 +355,4 @@ var chart = Highcharts.chart({
         ]
     }
 });
+

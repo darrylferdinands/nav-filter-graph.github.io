@@ -5,7 +5,10 @@ var chart = Highcharts.chart('container', {
       },
 
   title: {
-    text: 'Cumulative Sowing Trend'
+    text: 'Cumulative Sowing Trend',
+    fontSize : 18,
+      fontColor : "#00004d",
+      fontFamily: 'Alegreya'
   },
 
   subtitle: {

@@ -26,25 +26,20 @@
       </button>
       
       <a class="navbar-brand" href="index2.html"> 
-      <img src="skymet logo.png" style="display: inline-block; height: 125%; margin-left: 100px;">
+      <img src="skymet logo.png" style="display: inline-block; height: 125%;">
       <span style="display: inline-block;"> </span>
       </a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a class="navbar-brand" href="#" style="color: #00cc99; background-color: default; text-shadow: 2px;font-family: 'Alegreya', serif;font-size: 17px; margin-left: 55px;"><img src="dashboard.png" style="display: inline-block; height: 145%;">Dashboard</a></li>
+        <li><a class="navbar-brand" href="#" style="color: #00cc99; background-color: default; text-shadow: 2px;font-family: 'Alegreya', serif;font-size: 17px; margin-left: 30px;"><img src="dashboard.png" style="display: inline-block; height: 145%;">Dashboard</a></li>
         <li><a class="navbar-brand" href="#" style="background-color: default;font-family: 'Alegreya',serif;font-size:17px; margin-left: 30px;"><img src="userguide.png" style="display: inline-block; height: 145%;">User Guide</a></li>
         <li><a class="navbar-brand" href="#" style="background-color: default;font-family: 'Alegreya', serif;font-size: 17px;"><img src="def.png" style="display: inline-block; height: 145%;margin-left: 30px;">Definitions</a></li>
-      <li><a href="#" style="background-color: default;font-family: 'Alegreya', serif;font-size: 17px;margin-left: 30px;"><span class="glyphicon glyphicon-user" ></span> Sign Up</a></li>
-      
-        
-        <li><a href="#" style="background-color: default;font-family: 'Alegreya', serif;font-size: 17px;margin-left: 30px;"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
-    
     </div>
   </div>
 </nav>
-
+<div class="container-fluid">
 <div class="flex-container1">
 
 <div class="filter">
@@ -116,7 +111,7 @@ District:
 
 </div>
 </div>
-
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -124,23 +119,52 @@ District:
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/data.js"></script>
 <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+
+
 <div class="container-fluid">
   <div class="row">
 <div class="chart-container"> 
-      <div class="col-sm-6" style="border-style: solid; border: 1.5px;border-color: black;">
-    <canvas id="bar-chartcanvas"></canvas>
+      <div class="col-sm-6"><div class="well">
+    <canvas id="bar-chartcanvas"></canvas></div>
   </div>
-<div class="col-sm-6">
-  <canvas id="bar-chartcanvas2"></canvas>
+<div class="col-sm-6"><div class="well">
+  <canvas id="bar-chartcanvas2"></canvas></div>
 </div></div>
 </div></div>
-<div class="container-fluid" style="border-style: solid; border: 1.5px; border-color: black">
+
+
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-12">
-<div id="container7"></div>
+    <div class="col-sm-12"><div class= "well">
+<div id="container7"></div></div>
 </div></div></div>
 
-    
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6"><div class="well">
+      <canvas id="bar-chartcanvas3"></canvas>
+<h4 style="font-size: 14px;">Risk distribution of Rainfall Status (according to crop calendar) in the various states, different colours in each bar indicate number of districts in respective risk categories in a particular state.</h4>
+    </div>
+    </div>
+    <div class="col-sm-6"><div class="well">
+      <canvas id="bar-chartcanvas4"></canvas>
+<h4 style="font-size: 14px;">It shows risk distribution of dry spells in different states, different colours in each bar indicate number of districts in respective risk categories in a particular state.</h4>
+    </div>
+    </div></div></div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6"><div class="well">
+      <canvas id="bar-chartcanvas5"></canvas>
+<h4 style="font-size: 14px;">It shows risk distribution of wet spells in different states, different colours in each bar indicate number of districts in respective risk categories in a particular state.</h4>
+    </div>
+    </div>
+    <div class="col-sm-6"><div class="well">
+      <canvas id=""></canvas>
+    </div>
+    </div></div></div>
 
  <script src="js/jquery.min.js"></script>
     <script src="js/Chart.min.js"></script>
@@ -150,7 +174,6 @@ District:
   <script src="js/index3.js"></script>
    <script  src="js/index2.js"></script>
   <script  src="js/index1.js"></script> 
-
 
 
 </body>
