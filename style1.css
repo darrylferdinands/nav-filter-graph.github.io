@@ -1,4 +1,27 @@
 
+.chart-container {
+	overflow: hidden;
+	border-color: black;
+}
+
+section div {
+  float: left;
+  height: 25vw;
+  margin: 1%;
+  width: 44%;
+  border-width: 0px;
+  background-color: #e1eaea;
+  border-radius: 20px;
+  border: 1.5px;
+  border-style: solid;
+  padding: 15px;
+}
+section {
+  margin:-1%;
+  padding:5px;
+  margin-left: 60px;
+  }
+
 #container {border-radius: 15px;
     border : 1.5px ;
     border-style: solid;
