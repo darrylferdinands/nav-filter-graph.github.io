@@ -670,3 +670,140 @@ $(document).ready(function () {
 	});
 
 });
+
+
+
+
+
+$(document).ready(function () {
+
+	var ctx = $("#bar-chartcanvas6");
+
+	var data = { xAxis: {
+		title:
+	{
+		text: 'test'
+	}
+	},
+		labels : ["Aligarh", "Badaun", "Bara Banki", "Bulandshahar", "Faizabad","Gonda"],
+		datasets : [
+			{
+				label : "Normal area",
+				data : [28000,28000,28000,28000,28000,28000],
+				backgroundColor : [
+					"#8cd9b3",
+					"#8cd9b3",
+					"#8cd9b3",
+					"#8cd9b3",
+					"#8cd9b3",
+					"#8cd9b3",
+
+				],
+				borderColor : [
+					"black, "
+				],
+				borderWidth : 0
+
+			},
+			{
+				label : "Last year area",
+				data : [40000, 40000, 40000, 40000, 40000, 40000],
+				backgroundColor : [
+					"rgb(133, 163, 224)",
+					"rgb(133, 163, 224)",
+					"rgb(133, 163, 224)",
+					"rgb(133, 163, 224)",
+					"rgb(133, 163, 224)",
+					"rgb(133, 163, 224)",
+
+				],
+				borderColor : [
+					"black, "
+				],
+				borderWidth : 0,
+				borderRadius: 5
+			},
+
+			{
+				label : "Progress area in 2019",
+				data : [32000, 32000, 32000, 32000, 32000, 32000],
+				backgroundColor : [
+					"#ffd699",
+					"#ffd699",
+					"#ffd699",
+					"#ffd699",
+					"#ffd699",
+					"#ffd699",
+				],
+				borderColor : [
+					"black, "
+				],
+				borderWidth : 0
+			},
+			
+		]
+	};
+
+	var options = {
+		title : {
+			display : true,
+			position : "top",
+			text : "District Wise Acreages",
+			fontSize : 18,
+			fontColor : "#00004d",
+			fontFamily : 'Alegreya'
+		},
+
+		legend : {
+			display : true,
+			position : "bottom",
+			labels : {
+			boxWidth : 15,
+			borderRadius: 5,
+			fontFamily: 'sans-serif',
+			fontSize: 10
+		}
+	},
+
+			scales : {
+			yAxes : [{
+				ticks : {
+					min : 0,
+					
+				},
+				display: true,
+				scaleLabel: {
+					display: true,
+					labelString: 'Area (Ha) ',
+					fontColor: '#a2a2a2',
+					fontSize: 12,
+					fontweight: 1,
+
+				},
+				
+			}],
+			xAxes: [{
+					gridLines: {
+						display:false
+					},
+					//barPercentage: 1,
+                 	display: true,
+                        scaleLabel: {
+                              		display: true,
+                                	labelString: 'Sub-Districts',
+									fontColor: '#a2a2a2',
+									fontSize: 12,
+									fontweight: 600,
+									lineHeight: 1,
+                            		},
+                     }],	
+		}
+	};
+
+	var chart = new Chart( ctx, {
+		type : "bar",
+		data : data,
+		options : options
+	});
+
+});
