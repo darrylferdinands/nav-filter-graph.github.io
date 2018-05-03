@@ -4,11 +4,11 @@
 <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <title>Gramover</title>
   <link rel="stylesheet" href="style1.css">
   <link rel="stylesheet" href="style2.css">
@@ -40,9 +40,10 @@
   </div>
 </nav>
 <div class="container-fluid">
+  <div class="row">
 <div class="flex-container1">
 
-<div class="filter">
+<div class="col-sm-12 col-lg-6 filter">
 <h5 style="font-size: 18px;">Filter: </h5> <br>
  Crop:
   <select id="crop" name="crop">
@@ -71,7 +72,7 @@ District:
       <option>Faizabad</option>
       <option>Gorakhpur</option>
       <option>Goda</option> 
-</select>
+</select> 
 <label class="container2">Graphical
   <input type="radio" checked="checked" name="radio">
   <span class="checkmark"></span>
@@ -82,7 +83,7 @@ District:
 </label>
 </div>
 
-<div class="date">
+<div class="col-sm-12 lg-6 date">
 <h5 style="font-size: 18px;">Select Date: </h5> <br>
 <input type="date" name="random">
 <input type="Submit" value="Display">
@@ -108,7 +109,7 @@ District:
   <span class="checkmark1"></span>
 </label>
 
-
+</div>
 </div>
 </div>
 </div>
@@ -175,7 +176,8 @@ District:
   <script src="js/index3.js"></script>
    <script  src="js/index2.js"></script>
   <script  src="js/index1.js"></script> 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
 </html>

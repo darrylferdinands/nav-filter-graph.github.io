@@ -1,6 +1,6 @@
 select {
-  margin: 10px;
-  width: 120px;
+
+  margin : 2px;
   padding: 5px 5px 5px 5px;
   font-size: 13px;
   border: 1px solid #ccc;
@@ -9,7 +9,8 @@ select {
   -moz-appearance: none;
   appearance: none;
     background: url("drop.png") no-repeat right #ddd;     
- background-position-x: 85px; 
+ background-position-x: 70px; 
+ width: 100px;
  }
 
 
@@ -99,8 +100,7 @@ select::-ms-expand {
 .filter {
   display: inline-block;
   margin-top: -10px;
-  margin-right:  -45px;
-  width: 800px;
+  width: 825px;
 }
 
 
@@ -120,7 +120,7 @@ input[type=submit] {
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-    width: 100px;
+    width: 110px;
     height: 55px; 
     cursor: pointer;
 }
@@ -131,12 +131,15 @@ input[type=submit] {
   background-color: white;
   flex-wrap: wrap;
   align-items: stretch;
-  margin-top: 110px;
-  padding: 2px;}
+  margin-top: 70px;
+  margin-left: -45px;
+  padding: 1px;
+}
 
 .flex-container1 > div {
   background-color: white;
-  margin: 40px;
+  margin: 55px;
+
 }
 
 .flex-container2 {
@@ -157,7 +160,7 @@ height: 400px;
 }
 .date {
   display: inline-block;
-  margin-left: 70px;
+  margin-left: 90px;
   width: 900px;
   margin-top: -30px;
 }
